@@ -1,0 +1,274 @@
+@keyframes animaçãoVermelho {
+    0%{background-color: #ff0000;}
+    50%{background-color:#ffff00 ;}
+    100%{background-color: #00ff00;}
+}
+@keyframes animaçãoAmarelo {
+    0%{background-color:#ffff00 ;}
+    50%{background-color: #00ff00;}
+    100%{background-color: #ff0000;}
+}
+@keyframes animaçãoVerde {
+    0%{background-color: #00ff00;}
+    50%{background-color: #ff0000;}
+    100%{background-color:#ffff00;}
+   
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    
+}
+h2{
+    margin-bottom: 50px;
+}
+
+h3{
+    margin: 20px 30px;
+}
+
+
+body {
+    background-image: url('backbody.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.pokedex{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: row;
+}
+  
+.telaPrincipal{
+    background-image: radial-gradient(circle at 50% 50%, #ef732e 0, #f26432 16.67%, #f35237 33.33%, #f23c3c 50%, #f01c43 66.67%, #ee004b 83.33%, #ea0054 100%);
+    width: 600px;
+    height: 900px;
+    border-radius: 15px;   
+    padding: 50px;
+    margin: 1px;
+}
+.telaSecundaria{
+    background-image: radial-gradient(circle at 50% 50%, #ef732e 0, #f26432 16.67%, #f35237 33.33%, #f23c3c 50%, #f01c43 66.67%, #ee004b 83.33%, #ea0054 100%);
+    width: 600px;
+    height: 900px;
+    border-radius: 15px;   
+}
+.tela{
+    border: solid black;
+    background-color: #c0c0c0;
+    width: 90%;
+    height: 90%;
+    margin: 10px;
+    margin-left: 20px;
+}
+.telaDentro{
+    margin:50px 50px;
+    background-color:#ffffff;
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    border: solid;
+    
+}
+.circulo{
+    background-image: radial-gradient(circle at 50% -20.71%, #ac9bfc 0, #6c6cd8 50%, #0042b5 100%);
+    border-radius: 100%;
+    width: 80px;
+    height:80px;
+    border: solid white;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    
+}
+.luzes{
+    display: flex;
+    margin: 0 -20px;
+}
+.luzesMenores1{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 100%;
+    border: solid;
+    animation-name:animaçãoVermelho;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+.luzesMenores2{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 100%;
+    border: solid;
+    animation-name:animaçãoAmarelo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+.luzesMenores3{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 100%;
+    border: solid;
+    animation-name:animaçãoVerde;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+.tipos{
+    padding: 20px;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.tipoPokemon1{
+    background-color: #ffffff;
+    width: 40%;
+    height: 90%;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.tipoPokemon2{
+    background-color:rgb(255, 255, 255);
+    width:40%;
+    height:90%;
+    display: inline-block;
+    margin-left: 90px;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#pokemon img{
+    width: 60%;
+    text-align: center;
+    margin: 10px 60px;
+}
+.linhas{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.linha1{
+    margin: 20px -50px;
+    width: 60%;
+    height: 10px;
+    background-color: black;
+    border: none;
+}
+.linha2{
+    height: 10px;
+    background-color: black;
+    border: none;
+    transform: skewY(-60deg);
+    width: 55px;
+    margin: -25px 45px;
+}
+.linha3{
+    height: 10px;
+    background-color: black;
+    border: none;
+    width: 50%;
+    margin: -70px;
+    margin-left:-45px;  
+}
+.nomePokemon{
+    width: 50%;
+    background-color: white;
+    height: 50px;
+    margin:50px 125px;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tela2{
+    border: solid rgb(148, 148, 209);
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    background-image: radial-gradient(circle at 50% -20.71%, #ffffff 0, #cde5f2 50%, #98c0d6 100%);
+    font-size: large;
+    padding: 30px;
+    
+}
+.telaPrincipal2{
+    background-image: radial-gradient(circle at 50% 50%, #ef732e 0, #f26432 16.67%, #f35237 33.33%, #f23c3c 50%, #f01c43 66.67%, #ee004b 83.33%, #ea0054 100%);
+    width: 600px;
+    height: 800px;
+    border-radius: 15px;   
+    padding: 50px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.status{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+
+}
+.botoes{
+    padding: 50px 10px;
+}
+.botoes label{
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+}
+.botoes input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.botoes input[type="button"]{
+    background-color: #fc9b9b;
+    font-size: 30px;
+}
+.quadrados{
+    margin-top: 15px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+.quadrado{
+    background-color: #0042b5;
+    width: 90px;
+    height: 90px;
+    border: 1px black;
+    margin: 1px;
+}
